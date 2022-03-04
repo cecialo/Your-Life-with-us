@@ -1,0 +1,2 @@
+Lourdes Catalán y Mailer Alonzo realizaron toda su base para la API atravez de este documento:
+https://docs.google.com/document/d/1EWiUX3RKMKBa9qnSTlTOPydAAN0eq6i-/edit?usp=sharing&ouid=104615889749622326827&rtpof=true&sd=true

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+      />
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container px-5">
+        <!--LOGO-->
+        <a href="/index.html" class="navbar-brand">
+            <h5 class="">YourLifeWithUs</h5>
+        </a>
+        <a href="/index.html" class="navbar-brand">
+            <img src="/images/logo.png" alt="..." width="100" />
+        </a>
+        <!--TOGGLER (BARRITAS MOBILE)-->
+        <button
+            class="navbar-toggler"
+            role="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar_menu"
+            aria-controls="navbar_menu"
+            aria-expanded="false"
+            aria-label="Toggle"
+        >
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+
+        <!--MENU DE NAVEGACION-->
+        <div class="navbar-collapse collapse" id="navbar_menu">
+            <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a href="../index.html" class="nav-link active">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="tienda.html" class="nav-link">Medicinas</a>
+            </li>
+            <li class="nav-item">
+                <a href="tienda.html" class="nav-link">Medicina Natural y Traditional</a>
+            </li>
+            <li class="nav-item">
+                <a href="/pages/contact.html" class="nav-link">Contactanos</a>
+            </li>
+            </ul>
+        </div>
+        <!--LISTA DE ITEMS-->
+        <div class="d-flex">
+            <a href="/pages/compra.html">
+            <button id="btn_cart" class="btn btn-outline-secondary mx-4">
+                <i class="bi bi-cart-fill"></i>
+                <span class="badge rounded-pill bg-secondary ms-1">0</span>
+            </button>
+            </a>
+        </div>
+
+        <!--INICIAR SESIÓN-->
+        <div class="d-flex">
+            <a href="login.html">
+            <button class="btn btn-outline-secondary">
+                <i class="bi bi-person-fill"></i>
+            </button>
+            </a>
+        </div>
+        </div>
+    </nav>
+
+
+<!--Login-->
+
+    <div class="container border my-5 py-5 w-50 pb-5">
+        <div>
+            <div class="text-center row col-12 mt-5">
+                <h1 class="mb-3"><strong>¡Bienvenido(a)!</strong></h1>
+                <p> Gracias por elegirnos</p>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="d-flex flex-row justify-content-center">
+                <form>
+                    <input type="email" class="form-control mb-3" id="username" v-model="username" placeholder="@mail.com"
+                        aria-describedby="emailHelp" style="width: 500px;" required>
+                    <input type="password" class="form-control mb-3" id="password" v-model="password" placeholder="Contraseña" required>
+                    <a href="#">                    
+                        <p class="form-text">¿Olvidaste tu contraseña?</p>
+                    </a>
+
+                    <button
+                        type="submit"
+                        class="my-4 py-3 btn btn-primary fw-bold col-12"
+                        @click.prevent="DoLogin"
+                    >
+                        INICIAR SESION
+                    </button>
+                    <hr>
+                    <div class="form-text">Al registrame acepto los terminos y condiciones del servicio.</div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-12 text-center">
+                        ¿Aun no tienes una cuenta?
+                        </br>
+                        <a href="./registro.html" @click.prevent="goRegister" class="ms-2 text-dark fw-bold">REGÍSTRATE AHORA</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!--PIE DE PAGINA-->
+<footer class="bg-danger py-5">
+    <div class="container text-white">
+      <p class="text-center m-0">Derechos reservados</p>
+    </div>
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
